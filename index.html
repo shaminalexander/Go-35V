@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gopher Lab — Go: серверы без лишней суеты</title>
+<style>
+body{margin:0;background:#d9d9d9;color:#202020;font-family:Arial,Helvetica,sans-serif;line-height:1.45}
+.wrap{max-width:980px;margin:18px auto;background:#f5f5f5;border:1px solid #555;box-shadow:3px 3px 0 #999}
+header{padding:18px;border-bottom:1px solid #555;background:#e8e8e8}
+.top{display:flex;gap:18px;align-items:center}
+.top img{width:110px;height:90px;object-fit:cover}
+.kicker,.mono{font-family:"Courier New",monospace}
+.kicker{font-size:13px;color:#555}
+h1{font-size:34px;margin:4px 0 8px;letter-spacing:-1px}
+h2{font-size:22px;margin:0 0 12px}
+h3{font-size:16px;margin:0 0 7px}
+section{padding:20px;border-bottom:1px solid #aaa}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.panel{border:1px solid #777;background:#fff;padding:13px}
+.button{display:inline-block;background:#333;color:#fff;padding:8px 13px;text-decoration:none;border:2px solid #111;font-family:"Courier New",monospace;font-size:14px}
+.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.year{border:1px solid #777;background:#eee;padding:10px;min-height:105px}
+.year strong{display:block;font-family:"Courier New",monospace;font-size:18px;margin-bottom:5px}
+pre{margin:0;background:#111;color:#eee;border:1px solid #444;padding:14px;overflow:auto;font-size:14px}
+.spec{width:100%;border-collapse:collapse;background:#fff}
+.spec td{border:1px solid #aaa;padding:8px;vertical-align:top}
+.spec td:first-child{width:30%;font-family:"Courier New",monospace;background:#eee}
+footer{padding:14px 20px;background:#e8e8e8;font-size:12px;color:#555}
+@media(max-width:720px){.grid,.timeline{grid-template-columns:1fr}.top{align-items:flex-start}.top img{width:90px;height:74px}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="top">
+<img src="assets/images/gopher-badge.svg" alt="Авторская пиктограмма Gopher Lab">
+<div>
+<div class="kicker">GOPHER LAB // ВЕЧЕРНИЕ КУРСЫ // 2009—2013</div>
+<h1>Go: серверы без лишней суеты</h1>
+<div>Компиляция. Конкурентность. Сетевые программы. Меньше церемоний — больше работающего кода.</div>
+<p><a class="button" href="#course">ЗАПИСАТЬСЯ НА КУРС</a></p>
+</div>
+</div>
+</header>
+
+<section>
+<h2>Зачем появился Go?</h2>
+<div class="grid">
+<div class="panel"><h3>Проблема</h3><p>Большие кодовые базы, многопроцессорность, сетевые системы и необходимость быстро собирать программы.</p></div>
+<div class="panel"><h3>Подход</h3><p>Статическая типизация и компиляция сочетаются с лёгким синтаксисом, автоматическим управлением памятью и встроенной конкурентностью.</p></div>
+</div>
+</section>
+
+<section>
+<h2>От эксперимента к Go 1</h2>
+<div class="timeline">
+<div class="year"><strong>2007</strong>Начало разработки нового языка внутри Google.</div>
+<div class="year"><strong>2009</strong>Go становится open-source проектом.</div>
+<div class="year"><strong>2011</strong>Формируется план стабильного Go 1.</div>
+<div class="year"><strong>2012</strong>Выходит Go 1 — стабильная основа.</div>
+<div class="year"><strong>2013</strong>Go 1.1 усиливает производительность.</div>
+</div>
+</section>
+
+<section id="course">
+<h2>Программа курса</h2>
+<table class="spec">
+<tr><td>01 / Старт</td><td>Пакеты, функции и первая программа.</td></tr>
+<tr><td>02 / Сборка</td><td>Компиляция и инструменты без долгой церемонии.</td></tr>
+<tr><td>03 / Конкурентность</td><td>Goroutine и каналы: несколько задач одновременно.</td></tr>
+<tr><td>04 / Сеть</td><td>Сетевые программы и стандартная библиотека.</td></tr>
+<tr><td>05 / Go 1</td><td>Пишем программу на стабильной основе Go 1.</td></tr>
+</table>
+</section>
+
+<section>
+<h2>Лабораторный экран</h2>
+<div class="grid">
+<div class="panel"><img src="assets/images/terminal.svg" alt="Авторская стилизация терминала" style="width:100%;height:auto"></div>
+<div class="panel">
+<h3>Ваш сервер тоже хочет спать.</h3>
+<p>Пусть хотя бы программа не заставляет его ждать. На занятии разбираем модель конкурентного выполнения и применяем её к сетевой задаче.</p>
+<p class="mono">Gopher Lab / terminal / 2012</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Компьютер ученика</h2>
+<div class="grid">
+<div class="panel">
+<table class="spec">
+<tr><td>ОС</td><td>Linux / Windows / Mac OS X — в раннем Go 1 поддерживались эти платформы и другие.</td></tr>
+<tr><td>Инструмент</td><td>Терминал + редактор + компилятор.</td></tr>
+<tr><td>Сеть</td><td>Локальная разработка и подключение к сетевым сервисам.</td></tr>
+<tr><td>Стиль</td><td>Практика, тесты, командная строка.</td></tr>
+</table>
+</div>
+<div class="panel" style="text-align:center"><img src="assets/images/server.svg" alt="Авторская пиктограмма сервера" style="max-width:230px;width:100%"></div>
+</div>
+</section>
+
+<section>
+<h2>Почему именно эта эпоха?</h2>
+<p>2009—2013 — период, в котором особенно хорошо виден переход Go от открытого эксперимента к стабильному языку. Go 1 в марте 2012 года закрепил совместимость в рамках ветки Go 1.x, а Go 1.1 в 2013 году продолжил работу над производительностью.</p>
+<p class="mono">open source → community → Go 1 → production confidence</p>
+</section>
+
+<section>
+<h2>Gopher Lab ждёт</h2>
+<p><strong>Меньше лишней церемонии. Больше работающего кода.</strong></p>
+<p>Вымышленные курсы, придуманные для исторического исследования Go.</p>
+<a class="button" href="#course">ПОСМОТРЕТЬ ПРОГРАММУ</a>
+</section>
+
+<footer>
+Вариант 35 · Шамин Александр Сергеевич · ПИ-261 · Россия, Кемерово · Учебный проект «Языки программирования и предметно-ориентированные языки как артефакты эпохи»
+</footer>
+</div>
+</body>
+</html>
