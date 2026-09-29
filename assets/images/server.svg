@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" viewBox="0 0 360 360">
+<rect x="35" y="18" width="290" height="324" fill="#d7d7d7" stroke="#333" stroke-width="3"/>
+<g fill="#eee" stroke="#555" stroke-width="2">
+<rect x="58" y="45" width="244" height="65"/><rect x="58" y="128" width="244" height="65"/><rect x="58" y="211" width="244" height="65"/>
+</g>
+<g fill="#555"><circle cx="78" cy="70" r="6"/><circle cx="78" cy="153" r="6"/><circle cx="78" cy="236" r="6"/></g>
+<g fill="#999"><rect x="105" y="62" width="170" height="12"/><rect x="105" y="145" width="170" height="12"/><rect x="105" y="228" width="170" height="12"/></g>
+<text x="180" y="315" text-anchor="middle" font-family="monospace" font-size="16" fill="#333">SERVER / 2012</text>
+</svg>

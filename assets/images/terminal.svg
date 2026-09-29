@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="260" viewBox="0 0 760 260">
+<rect width="760" height="260" fill="#111"/>
+<rect x="1" y="1" width="758" height="258" fill="none" stroke="#777"/>
+<rect x="18" y="18" width="724" height="26" fill="#2d2d2d"/>
+<circle cx="31" cy="31" r="5" fill="#888"/><circle cx="48" cy="31" r="5" fill="#888"/><circle cx="65" cy="31" r="5" fill="#888"/>
+<text x="25" y="78" font-family="monospace" font-size="17" fill="#ddd">$ go run hello.go</text>
+<text x="25" y="108" font-family="monospace" font-size="17" fill="#ddd">hello, network</text>
+<text x="25" y="150" font-family="monospace" font-size="17" fill="#ddd">$ go test ./...</text>
+<text x="25" y="180" font-family="monospace" font-size="17" fill="#ddd">ok   example/server</text>
+<text x="25" y="225" font-family="monospace" font-size="15" fill="#aaa">Gopher Lab terminal / 2012</text>
+</svg>

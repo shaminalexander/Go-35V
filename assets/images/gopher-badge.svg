@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="180" viewBox="0 0 220 180">
+<rect width="220" height="180" fill="#f1f1f1" stroke="#555" stroke-width="2"/>
+<circle cx="110" cy="82" r="48" fill="#aaa" stroke="#333" stroke-width="3"/>
+<circle cx="92" cy="73" r="6" fill="#222"/><circle cx="128" cy="73" r="6" fill="#222"/>
+<path d="M92 100 Q110 114 128 100" fill="none" stroke="#333" stroke-width="3"/>
+<path d="M70 50 L55 34 M150 50 L165 34" stroke="#333" stroke-width="5"/>
+<text x="110" y="153" text-anchor="middle" font-family="monospace" font-size="18" fill="#222">GOPHER LAB</text>
+</svg>
